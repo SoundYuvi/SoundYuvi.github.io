@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Northstar — Private apps, beautifully made</title>
+<meta name="description" content="Northstar builds privacy-first apps for iPhone. Your data stays yours.">
+<style>
+  :root{
+    --bg:#0e0f14;--card:#171922;--line:rgba(255,255,255,.08);
+    --txt:#f4f5f8;--mut:#a3a6b3;--brand1:#5b5bd6;--brand2:#2e7dd1;--star:#f5c451;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+       background:var(--bg);color:var(--txt);line-height:1.6;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:960px;margin:0 auto;padding:0 22px}
+  nav{display:flex;align-items:center;justify-content:space-between;padding:22px 0}
+  .logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:18px}
+  .logo .mark{width:34px;height:34px;border-radius:10px;
+       background:linear-gradient(135deg,var(--brand1),var(--brand2));display:grid;place-items:center;font-size:18px}
+  nav .links a{color:var(--mut);margin-left:20px;font-size:14px}
+  nav .links a:hover{color:var(--txt)}
+  .hero{text-align:center;padding:80px 0 50px}
+  .hero .star{font-size:40px;margin-bottom:10px}
+  .hero h1{font-size:clamp(34px,6vw,54px);font-weight:800;letter-spacing:-1px;line-height:1.12}
+  .hero h1 .grad{background:linear-gradient(135deg,#9b8bff,var(--star));
+       -webkit-background-clip:text;background-clip:text;color:transparent}
+  .hero p{color:var(--mut);font-size:18px;max-width:560px;margin:18px auto 0}
+  h2{font-size:24px;font-weight:700;margin-bottom:6px}
+  .lead{color:var(--mut);margin-bottom:26px}
+  section{padding:40px 0}
+  .apps{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+  .app{display:block;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:24px;transition:.2s}
+  .app:hover{border-color:rgba(155,139,255,.5);transform:translateY(-2px)}
+  .app .ic{width:54px;height:54px;border-radius:14px;display:grid;place-items:center;font-size:28px;
+       background:linear-gradient(135deg,var(--brand1),var(--brand2));margin-bottom:14px}
+  .app h3{font-size:18px;margin-bottom:4px}
+  .app p{color:var(--mut);font-size:14px}
+  .app .go{color:#9b8bff;font-size:13px;font-weight:600;margin-top:12px;display:inline-block}
+  .soon{opacity:.55}
+  .soon .ic{background:#22242e}
+  .soon .go{color:var(--mut)}
+  .values{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-top:8px}
+  .v{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px}
+  .v .ic{font-size:22px;margin-bottom:8px}
+  .v h4{font-size:15px;margin-bottom:4px}
+  .v p{color:var(--mut);font-size:13px}
+  footer{border-top:1px solid var(--line);padding:28px 0;margin-top:30px;
+       display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;color:var(--mut);font-size:13px}
+  footer a{color:var(--mut);margin-left:16px}
+  footer a:hover{color:var(--txt)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <nav>
+    <div class="logo"><span class="mark">⭐</span> Northstar</div>
+    <div class="links">
+      <a href="#apps">Apps</a>
+      <a href="mailto:kisyuvi06@gmail.com">Contact</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="star">⭐</div>
+    <h1>Private apps,<br><span class="grad">beautifully made.</span></h1>
+    <p>Northstar builds privacy-first apps for iPhone. No accounts, no servers, no tracking —
+       your data stays yours.</p>
+  </header>
+
+  <section id="apps">
+    <h2>Our apps</h2>
+    <p class="lead">Crafted with care. Built to respect you.</p>
+    <div class="apps">
+      <a class="app" href="financeapp/index.html">
+        <div class="ic" style="background:none;padding:0"><img src="financeapp/icon.png" alt="FinanceApp" style="width:54px;height:54px;border-radius:14px"></div>
+        <h3>FinanceApp</h3>
+        <p>Track expenses, budgets, investments &amp; net worth — synced privately through your own iCloud.</p>
+        <span class="go">Learn more →</span>
+      </a>
+      <a class="app" href="thirukkural/index.html">
+        <div class="ic" style="background:none;padding:0"><img src="thirukkural/icon.png" alt="Thirukkural" style="width:54px;height:54px;border-radius:14px"></div>
+        <h3>Thirukkural – Tamil Wisdom</h3>
+        <p>All 1330 couplets with audio, quizzes, badges, widgets &amp; an Apple Watch app — in Tamil, English or Hybrid. Free &amp; ad-free.</p>
+        <span class="go">Learn more →</span>
+      </a>
+      <div class="app soon">
+        <div class="ic">✨</div>
+        <h3>More coming soon</h3>
+        <p>New privacy-first apps are in the works. Stay tuned.</p>
+        <span class="go">Coming soon</span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>What we believe</h2>
+    <p class="lead">Three principles behind everything we make.</p>
+    <div class="values">
+      <div class="v"><div class="ic">🔒</div><h4>Privacy by default</h4><p>Your data lives on your device and your iCloud — never on our servers.</p></div>
+      <div class="v"><div class="ic">🎨</div><h4>Crafted, not cluttered</h4><p>Calm, considered design that gets out of your way.</p></div>
+      <div class="v"><div class="ic">🚫</div><h4>No tracking, ever</h4><p>No ads, no analytics SDKs, no selling your data. Full stop.</p></div>
+    </div>
+  </section>
+
+  <footer>
+    <div>© 2026 Northstar. Made with care.</div>
+    <div>
+      <a href="financeapp/index.html">FinanceApp</a>
+      <a href="financeapp/privacy.html">Privacy</a>
+      <a href="financeapp/support.html">Support</a>
+      <a href="mailto:kisyuvi06@gmail.com">Contact</a>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>

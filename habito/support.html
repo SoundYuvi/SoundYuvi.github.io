@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Habito — Support</title>
+<style>
+  :root{--bg:#0e0f14;--card:#171922;--line:rgba(255,255,255,.08);--txt:#f4f5f8;--mut:#a3a6b3;--brand1:#6366f1;--brand2:#a855f7}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--txt);line-height:1.7;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:720px;margin:0 auto;padding:0 22px}
+  nav{display:flex;align-items:center;justify-content:space-between;padding:22px 0}
+  .logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:18px}
+  .mark{width:34px;height:34px;border-radius:9px;background:linear-gradient(135deg,var(--brand1),var(--brand2));display:grid;place-items:center;font-size:18px}
+  nav .links a{color:var(--mut);margin-left:20px;font-size:14px}
+  nav .links a:hover{color:var(--txt)}
+  .hero{padding:50px 0 30px;text-align:center}
+  .hero h1{font-size:36px;font-weight:800;margin-bottom:10px}
+  .hero p{color:var(--mut);max-width:500px;margin:0 auto}
+  section{padding:30px 0}
+  h2{font-size:20px;font-weight:700;margin-bottom:18px}
+  .faq{display:flex;flex-direction:column;gap:12px}
+  .q{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px}
+  .q h3{font-size:15px;font-weight:600;margin-bottom:6px}
+  .q p{color:var(--mut);font-size:14px}
+  .contact-box{background:linear-gradient(135deg,rgba(99,102,241,.12),rgba(168,85,247,.08));
+       border:1px solid var(--line);border-radius:22px;padding:34px;text-align:center}
+  .contact-box h2{margin-bottom:10px}
+  .contact-box p{color:var(--mut);margin-bottom:20px}
+  .cta{display:inline-block;background:linear-gradient(135deg,var(--brand1),var(--brand2));
+       color:#fff;font-weight:600;padding:12px 28px;border-radius:12px;font-size:15px}
+  .cta:hover{opacity:.9}
+  footer{border-top:1px solid var(--line);padding:28px 0;display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;color:var(--mut);font-size:13px}
+  footer a{color:var(--mut);margin-left:16px}footer a:hover{color:var(--txt)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav>
+    <div class="logo"><div class="mark">🔥</div> Habito</div>
+    <div class="links"><a href="index.html">Home</a><a href="../index.html">Northstar</a></div>
+  </nav>
+
+  <header class="hero">
+    <h1>💬 Support</h1>
+    <p>We're here to help. Browse the FAQ or drop us an email — we usually reply within 24 hours.</p>
+  </header>
+
+  <section>
+    <h2>Frequently asked questions</h2>
+    <div class="faq">
+      <div class="q">
+        <h3>My streak reset unexpectedly. What happened?</h3>
+        <p>Streaks are based on consecutive daily check-ins. If you didn't mark a habit on a given day, the streak resets. Make sure to check in before midnight each day, or enable a reminder so you don't forget.</p>
+      </div>
+      <div class="q">
+        <h3>How do I set a reminder for a habit?</h3>
+        <p>Tap any habit row to open the Edit screen. Toggle on "Enable reminder" and pick your preferred time. Each habit can have its own independent reminder.</p>
+      </div>
+      <div class="q">
+        <h3>Is my data backed up?</h3>
+        <p>Habito stores data locally on your iPhone using UserDefaults, which is included in your standard iOS device backup. If you back up your iPhone via iCloud or Finder, your habits are backed up too.</p>
+      </div>
+      <div class="q">
+        <h3>How do I archive a habit without deleting it?</h3>
+        <p>Swipe left on a habit row — you'll see both "Archive" (yellow) and "Delete" (red) options. Archived habits hide from the main view but keep all their history. Restore them anytime in Settings → Archived Habits.</p>
+      </div>
+      <div class="q">
+        <h3>Can I add a note when I check in?</h3>
+        <p>Yes! After tapping the checkmark, a note prompt appears automatically. You can also swipe right on any habit row and tap "Note" to add one at any time.</p>
+      </div>
+      <div class="q">
+        <h3>How do I change the app's theme colour?</h3>
+        <p>Go to the Settings tab (gear icon) and pick from 7 accent colours: Indigo, Blue, Purple, Pink, Orange, Teal and Green.</p>
+      </div>
+      <div class="q">
+        <h3>Does Habito sync across my devices?</h3>
+        <p>Currently Habito stores data locally on each device. iCloud sync is on the roadmap and will be added in a future update.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="contact-box">
+      <h2>Still need help?</h2>
+      <p>Send us an email and we'll get back to you as quickly as we can.</p>
+      <a class="cta" href="mailto:kisyuvi06@icloud.com">Email Support</a>
+    </div>
+  </section>
+
+  <footer>
+    <div>© 2026 Northstar. Made with care.</div>
+    <div><a href="index.html">Habito</a><a href="privacy.html">Privacy</a><a href="mailto:kisyuvi06@icloud.com">Contact</a></div>
+  </footer>
+</div>
+</body>
+</html>

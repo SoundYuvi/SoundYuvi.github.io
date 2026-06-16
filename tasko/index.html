@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tasko — Tasks, your way</title>
+<meta name="description" content="A fast, focused task manager with AI quick-capture, Kanban & calendar views, Focus mode, widgets, Live Activities and an Apple Watch app. Private by design.">
+<link rel="icon" type="image/png" href="icon.png">
+<style>
+  :root{
+    --bg:#0e0f14; --card:#171922; --line:rgba(255,255,255,.08);
+    --txt:#f4f5f8; --mut:#a3a6b3;
+    --brand1:#0f766e; --brand2:#14b8a6;
+    --pro1:#6d28d9; --pro2:#f59e0b;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+       background:var(--bg);color:var(--txt);line-height:1.6;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:980px;margin:0 auto;padding:0 22px}
+  nav{display:flex;align-items:center;justify-content:space-between;padding:22px 0}
+  .logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:18px}
+  .logo img{width:34px;height:34px;border-radius:9px}
+  nav .links a{color:var(--mut);margin-left:20px;font-size:14px}
+  nav .links a:hover{color:var(--txt)}
+  .hero{text-align:center;padding:60px 0 40px}
+  .hero img.app{width:104px;height:104px;border-radius:24px;box-shadow:0 14px 40px rgba(15,118,110,.4);margin:0 auto 22px;display:block}
+  .hero h1{font-size:clamp(34px,6vw,56px);font-weight:800;letter-spacing:-1px;line-height:1.1}
+  .hero h1 .grad{background:linear-gradient(135deg,var(--brand1),var(--brand2));
+       -webkit-background-clip:text;background-clip:text;color:transparent}
+  .hero p{color:var(--mut);font-size:18px;max-width:580px;margin:18px auto 28px}
+  .badge{display:inline-flex;align-items:center;gap:8px;background:var(--card);
+       border:1px solid var(--line);border-radius:100px;padding:7px 14px;font-size:13px;color:var(--mut);margin-bottom:22px}
+  .dot{width:7px;height:7px;border-radius:50%;background:var(--brand2)}
+  .cta{display:inline-block;background:linear-gradient(135deg,var(--brand1),var(--brand2));
+       color:#fff;font-weight:600;padding:14px 30px;border-radius:14px;font-size:16px;
+       box-shadow:0 10px 30px rgba(15,118,110,.35)}
+  .cta:hover{opacity:.92}
+  .sub{color:var(--mut);font-size:13px;margin-top:14px}
+  section{padding:46px 0}
+  h2{font-size:28px;font-weight:700;text-align:center;margin-bottom:8px}
+  .lead{color:var(--mut);text-align:center;margin-bottom:34px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+  .feat{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px}
+  .feat .ic{font-size:24px;margin-bottom:10px}
+  .feat h3{font-size:16px;margin-bottom:5px}
+  .feat p{color:var(--mut);font-size:14px}
+  .privacy{background:linear-gradient(135deg,rgba(15,118,110,.14),rgba(20,184,166,.08));
+       border:1px solid var(--line);border-radius:22px;padding:34px;text-align:center}
+  .privacy h2{margin-bottom:10px}
+  .privacy p{color:var(--mut);max-width:620px;margin:0 auto}
+  .plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:10px}
+  .plan{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px;text-align:center}
+  .plan.best{border-color:transparent;
+       background:linear-gradient(var(--card),var(--card)) padding-box,
+                 linear-gradient(135deg,var(--pro1),var(--pro2)) border-box;
+       border:1.5px solid transparent;position:relative}
+  .plan.best .tag{position:absolute;top:-11px;left:50%;transform:translateX(-50%);
+       background:linear-gradient(135deg,var(--pro1),var(--pro2));font-size:10px;font-weight:800;
+       letter-spacing:.5px;padding:4px 12px;border-radius:100px}
+  .plan .name{font-size:14px;color:var(--mut);text-transform:uppercase;letter-spacing:1px}
+  .plan .price{font-size:34px;font-weight:800;margin:6px 0}
+  .plan .price span{font-size:14px;color:var(--mut);font-weight:500}
+  .plan .note{color:var(--mut);font-size:13px}
+  footer{border-top:1px solid var(--line);padding:30px 0;margin-top:30px;
+       display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;align-items:center;color:var(--mut);font-size:13px}
+  footer a{color:var(--mut);margin-left:18px}
+  footer a:hover{color:var(--txt)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <nav>
+    <div class="logo"><img src="icon.png" alt="Tasko" style="object-fit:cover"> Tasko</div>
+    <div class="links">
+      <a href="../index.html">Northstar</a>
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="support.html">Support</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <img class="app" src="icon.png" alt="Tasko app icon">
+    <div class="badge"><span class="dot"></span> Private by design — your tasks stay on your device</div>
+    <h1>Get things done,<br><span class="grad">without the clutter.</span></h1>
+    <p>A fast, focused task manager — AI quick-capture, Kanban &amp; calendar views, Focus mode
+       and an Apple Watch app. No accounts, no servers, no tracking.</p>
+    <a class="cta" href="#">Download on the App Store</a>
+    <div class="sub">Requires iPhone · iOS 17+</div>
+  </header>
+
+  <section id="features">
+    <h2>Everything you need to stay on track</h2>
+    <p class="lead">A complete task manager — without giving up your privacy.</p>
+    <div class="grid">
+      <div class="feat"><div class="ic">✨</div><h3>AI Quick Capture</h3><p>Type or speak a task in plain language — Tasko parses dates, times and priority for you automatically.</p></div>
+      <div class="feat"><div class="ic">🗂️</div><h3>Kanban &amp; Calendar Views</h3><p>Organise tasks your way — drag-and-drop boards, a timeline view, or a classic list.</p></div>
+      <div class="feat"><div class="ic">🎯</div><h3>Focus Mode &amp; Pomodoro</h3><p>Work distraction-free with built-in focus sessions and a Pomodoro timer.</p></div>
+      <div class="feat"><div class="ic">🎙️</div><h3>Voice Input</h3><p>Add tasks on the go just by speaking — no typing required.</p></div>
+      <div class="feat"><div class="ic">👥</div><h3>Share &amp; Assign</h3><p>Assign tasks to others and keep the conversation going with comments and notifications.</p></div>
+      <div class="feat"><div class="ic">📎</div><h3>Attachments &amp; Templates</h3><p>Attach files and reuse task templates for recurring workflows.</p></div>
+      <div class="feat"><div class="ic">⌚</div><h3>Apple Watch &amp; Widgets</h3><p>Check off tasks from your wrist, your home screen or a Live Activity.</p></div>
+      <div class="feat"><div class="ic">☁️</div><h3>iCloud Sync</h3><p>Your tasks sync privately across all your devices through your own iCloud.</p></div>
+      <div class="feat"><div class="ic">📄</div><h3>PDF Export</h3><p>Export your task lists and reports as a PDF whenever you need them.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="privacy">
+      <h2>🔒 Privacy isn't a feature. It's the foundation.</h2>
+      <p>Tasko has no login and no backend. Your tasks live only on your device and your
+         personal iCloud (Apple's encrypted private database). We never see your data, never
+         sell it, and there are no third-party trackers or ads.</p>
+    </div>
+  </section>
+
+  <section id="pricing">
+    <h2>Simple, fair pricing</h2>
+    <p class="lead">Start free. Upgrade to Pro for everything — your choice of plan.</p>
+    <div class="plans">
+      <div class="plan">
+        <div class="name">Monthly</div>
+        <div class="price">₹49<span>/mo</span></div>
+        <div class="note">All Pro features, billed monthly</div>
+      </div>
+      <div class="plan best">
+        <div class="tag">30-DAY FREE TRIAL</div>
+        <div class="name">Yearly</div>
+        <div class="price">₹299<span>/yr</span></div>
+        <div class="note">Best value · 30 days free</div>
+      </div>
+      <div class="plan">
+        <div class="name">Lifetime</div>
+        <div class="price">₹499<span> once</span></div>
+        <div class="note">🚀 Launch price · pay once</div>
+      </div>
+    </div>
+    <p style="color:var(--mut);font-size:12px;max-width:640px;margin:22px auto 0;text-align:center;line-height:1.6">
+      Tasko Pro is available as an auto-renewing subscription (Monthly or Yearly) or a one-time
+      Lifetime purchase. Payment is charged to your Apple Account at confirmation. Subscriptions
+      renew automatically unless cancelled at least 24 hours before the period ends; manage or
+      cancel anytime in your Apple Account settings. The free trial converts to a paid yearly
+      subscription unless cancelled before it ends.
+      <br><br>
+      <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" style="color:var(--brand2)">Terms of Use (EULA)</a>
+      &nbsp;·&nbsp;
+      <a href="privacy.html" style="color:var(--brand2)">Privacy Policy</a>
+    </p>
+  </section>
+
+  <footer>
+    <div>© 2026 Northstar. Made with care.</div>
+    <div>
+      <a href="privacy.html">Privacy</a>
+      <a href="support.html">Support</a>
+      <a href="mailto:kisyuvi06@icloud.com">Contact</a>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>நாற்பது – Tamil Wisdom · Pathinen Keelkanakku Noolgal</title>
+<meta name="description" content="Read and reflect on the Pathinen Keelkanakku Noolgal — the 18 classical Tamil ethical texts. Starting with Iniyavai Naarpadhu, more texts coming soon. Free and ad-free.">
+<link rel="icon" type="image/png" href="icon.png">
+<style>
+  :root{
+    --bg:#0e0a06; --card:#1a1408; --line:rgba(255,255,255,.08);
+    --txt:#f5f0e8; --mut:#b8a98a;
+    --gold:#d4a017; --gold2:#f0c040; --amber:#c47c0a;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+       background:var(--bg);color:var(--txt);line-height:1.6;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:980px;margin:0 auto;padding:0 22px}
+  nav{display:flex;align-items:center;justify-content:space-between;padding:22px 0}
+  .logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:18px}
+  .logo img{width:34px;height:34px;border-radius:9px;object-fit:cover}
+  nav .links a{color:var(--mut);margin-left:20px;font-size:14px}
+  nav .links a:hover{color:var(--txt)}
+
+  /* hero */
+  .hero{text-align:center;padding:50px 0 40px}
+  .hero img.app{width:104px;height:104px;border-radius:24px;
+       box-shadow:0 14px 40px rgba(212,160,23,.4);margin:0 auto 18px;display:block}
+  .collection-tag{display:inline-block;background:linear-gradient(135deg,var(--amber),var(--gold2));
+       color:#1a0f00;font-size:12px;font-weight:800;letter-spacing:.8px;text-transform:uppercase;
+       padding:5px 14px;border-radius:100px;margin-bottom:18px}
+  .hero h1{font-size:clamp(28px,5vw,48px);font-weight:800;letter-spacing:-.5px;line-height:1.15}
+  .hero h1 .tamil{display:block;font-size:.85em;color:var(--gold2);margin-bottom:4px}
+  .hero p{color:var(--mut);font-size:17px;max-width:580px;margin:16px auto 28px}
+  .badge{display:inline-flex;align-items:center;gap:8px;background:var(--card);
+       border:1px solid var(--line);border-radius:100px;padding:7px 14px;font-size:13px;color:var(--mut);margin-bottom:20px}
+  .btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-bottom:6px}
+  .cta{display:inline-flex;align-items:center;gap:10px;background:#000;
+       color:#fff;font-weight:600;padding:12px 22px;border-radius:14px;font-size:15px;
+       border:1px solid rgba(255,255,255,.15)}
+  .cta:hover{opacity:.85}
+  .cta .store-label{display:flex;flex-direction:column;text-align:left}
+  .cta .store-label small{font-size:10px;font-weight:400;opacity:.75;line-height:1}
+  .cta .store-label span{font-size:15px;font-weight:700;line-height:1.3}
+  .sub{color:var(--mut);font-size:13px;margin-top:10px}
+
+  /* sections */
+  section{padding:46px 0}
+  h2{font-size:26px;font-weight:700;text-align:center;margin-bottom:8px}
+  .lead{color:var(--mut);text-align:center;margin-bottom:34px}
+
+  /* texts grid */
+  .texts{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+  .text-card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;position:relative}
+  .text-card .ic{font-size:26px;margin-bottom:10px}
+  .text-card h3{font-size:16px;font-weight:700;margin-bottom:2px}
+  .text-card .ta{font-size:13px;color:var(--gold2);margin-bottom:6px}
+  .text-card p{color:var(--mut);font-size:13px}
+  .text-card .pill{position:absolute;top:14px;right:14px;font-size:10px;font-weight:700;
+       padding:3px 10px;border-radius:100px}
+  .pill.live{background:rgba(46,158,87,.2);color:#5edb8a}
+  .pill.soon{background:rgba(255,255,255,.08);color:var(--mut)}
+  .pill.new{background:rgba(212,160,23,.2);color:var(--gold2)}
+
+  /* features */
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+  .feat{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px}
+  .feat .ic{font-size:24px;margin-bottom:10px}
+  .feat h3{font-size:16px;margin-bottom:5px}
+  .feat p{color:var(--mut);font-size:14px}
+
+  /* companion strip */
+  .companion{background:linear-gradient(135deg,rgba(20,102,180,.1),rgba(46,158,87,.08));
+       border:1px solid var(--line);border-radius:22px;padding:28px;
+       display:flex;align-items:center;gap:22px;flex-wrap:wrap}
+  .companion img{width:64px;height:64px;border-radius:16px;flex-shrink:0}
+  .companion-text h3{font-size:18px;font-weight:700;margin-bottom:4px}
+  .companion-text p{color:var(--mut);font-size:14px;max-width:520px}
+  .companion-text a{display:inline-block;margin-top:10px;color:#7fc99a;font-size:13px;font-weight:600}
+
+  /* privacy */
+  .privacy{background:linear-gradient(135deg,rgba(212,160,23,.1),rgba(240,192,64,.06));
+       border:1px solid var(--line);border-radius:22px;padding:34px;text-align:center}
+  .privacy h2{margin-bottom:10px}
+  .privacy p{color:var(--mut);max-width:620px;margin:0 auto}
+
+  footer{border-top:1px solid var(--line);padding:30px 0;margin-top:30px;
+       display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;align-items:center;color:var(--mut);font-size:13px}
+  footer a{color:var(--mut);margin-left:18px}
+  footer a:hover{color:var(--txt)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <nav>
+    <div class="logo"><img src="icon.png" alt="நாற்பது"> நாற்பது</div>
+    <div class="links">
+      <a href="../index.html">Northstar</a>
+      <a href="#texts">Texts</a>
+      <a href="#features">Features</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="support.html">Support</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <img class="app" src="icon.png" alt="நாற்பது app icon">
+    <div class="collection-tag">Pathinen Keelkanakku Noolgal</div>
+    <h1><span class="tamil">நாற்பது – தமிழ் ஞானம்</span>நாற்பது – Tamil Wisdom</h1>
+    <div class="badge">📜 Classical Tamil ethical poetry · Free &amp; ad-free</div>
+    <p>Explore the Pathinen Keelkanakku — the 18 classical Tamil ethical texts. Read the 40-verse
+       poems in Tamil, reflect on their meaning, and carry ancient wisdom in your pocket.</p>
+    <div class="btns">
+      <a class="cta" href="#" target="_blank" rel="noopener">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+        <div class="store-label"><small>Download on the</small><span>App Store</span></div>
+      </a>
+    </div>
+    <div class="sub">iPhone · iOS 17+</div>
+  </header>
+
+  <section id="texts">
+    <h2>Pathinen Keelkanakku Noolgal</h2>
+    <p class="lead">The 18 classical lower texts — 40-verse ethical poems from ancient Tamil literature.</p>
+    <div class="texts">
+      <div class="text-card">
+        <span class="pill live">Available</span>
+        <div class="ic">🌿</div>
+        <h3>Iniyavai Naarpadhu</h3>
+        <div class="ta">இனியவை நாற்பது</div>
+        <p>Forty verses on the pleasant things in life — on goodness, friendship and joy.</p>
+      </div>
+      <div class="text-card">
+        <span class="pill new">New</span>
+        <div class="ic">🌧️</div>
+        <h3>Inna Naarpadhu</h3>
+        <div class="ta">இன்னா நாற்பது</div>
+        <p>Forty verses on the painful things — on what is harmful, ignoble and sorrowful.</p>
+      </div>
+      <div class="text-card">
+        <span class="pill soon">Coming soon</span>
+        <div class="ic">☁️</div>
+        <h3>Kaar Naarpadhu</h3>
+        <div class="ta">கார் நாற்பது</div>
+        <p>Forty verses on the season of rain — vivid imagery from the monsoon.</p>
+      </div>
+      <div class="text-card">
+        <span class="pill soon">Coming soon</span>
+        <div class="ic">⚔️</div>
+        <h3>Kalavazhi Naarpadhu</h3>
+        <div class="ta">களவழி நாற்பது</div>
+        <p>Forty verses on the battlefield — courage, honour and the ethics of war.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="features">
+    <h2>Features</h2>
+    <p class="lead">Everything you need to read, reflect and explore classical Tamil poetry.</p>
+    <div class="grid">
+      <div class="feat"><div class="ic">📖</div><h3>Full Tamil Text</h3><p>Read every verse in authentic Tamil script, beautifully presented on every screen size.</p></div>
+      <div class="feat"><div class="ic">🌅</div><h3>Verse of the Day</h3><p>A fresh verse surfaces each day — across all available texts — to inspire your morning.</p></div>
+      <div class="feat"><div class="ic">❤️</div><h3>Favourites</h3><p>Save verses you love and revisit them anytime, stored privately on your device.</p></div>
+      <div class="feat"><div class="ic">🎨</div><h3>Card Maker</h3><p>Turn any verse into a beautiful shareable image to send to friends or post on social media.</p></div>
+      <div class="feat"><div class="ic">🔔</div><h3>Daily Reminders</h3><p>Get a gentle daily notification to read your verse of the day.</p></div>
+      <div class="feat"><div class="ic">🔒</div><h3>Fully Private</h3><p>No accounts, no tracking, no ads. Everything stays on your device.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Also in our Tamil Wisdom collection</h2>
+    <p class="lead">Explore more classical Tamil literature from Northstar.</p>
+    <div class="companion">
+      <img src="../thirukkural/icon.png" alt="Thirukkural">
+      <div class="companion-text">
+        <h3>Thirukkural – Tamil Wisdom</h3>
+        <p>All 1330 couplets of the Thirukkural with audio, quizzes, badges, widgets and an Apple
+           Watch app — in Tamil, English or Hybrid. Free and ad-free.</p>
+        <a href="../thirukkural/index.html">Learn more →</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="privacy">
+      <h2>🔒 Your data stays with you.</h2>
+      <p>நாற்பது has no login and no backend. Your favourites and preferences are stored only on
+         your device. We never see your data, never sell it, and there are no ads or trackers.</p>
+    </div>
+  </section>
+
+  <footer>
+    <div>© 2026 Northstar. Made with care.</div>
+    <div>
+      <a href="privacy.html">Privacy</a>
+      <a href="support.html">Support</a>
+      <a href="mailto:kisyuvi06@icloud.com">Contact</a>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>

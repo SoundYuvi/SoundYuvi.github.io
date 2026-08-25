@@ -30,6 +30,8 @@
   h2{font-size:24px;font-weight:700;margin-bottom:6px}
   .lead{color:var(--mut);margin-bottom:26px}
   section{padding:40px 0}
+  .cat-label{font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--mut);margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+  .cat-label:first-child{margin-top:0}
   .apps{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
   .app{display:block;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:24px;transition:.2s}
   .app:hover{border-color:rgba(155,139,255,.5);transform:translateY(-2px)}
@@ -85,23 +87,13 @@
   <section id="apps">
     <h2>Our apps</h2>
     <p class="lead">Crafted with care. Built to respect you.</p>
+
+    <div class="cat-label">Tamil Wisdom</div>
     <div class="apps">
-      <a class="app" href="financeapp/index.html">
-        <div class="ic" style="background:none;padding:0"><img src="financeapp/icon.png" alt="Budgeto" style="width:54px;height:54px;border-radius:14px"></div>
-        <h3>Budgeto</h3>
-        <p>Track expenses, budgets, investments &amp; net worth — synced privately through your own iCloud.</p>
-        <span class="go">Learn more →</span>
-      </a>
       <a class="app" href="thirukkural/index.html">
         <div class="ic" style="background:none;padding:0"><img src="thirukkural/icon.png" alt="Thirukkural" style="width:54px;height:54px;border-radius:14px"></div>
         <h3>Thirukkural – Tamil Wisdom</h3>
         <p>All 1330 couplets with audio, quizzes, badges, widgets &amp; an Apple Watch app — in Tamil, English or Hybrid. Free &amp; ad-free.</p>
-        <span class="go">Learn more →</span>
-      </a>
-      <a class="app" href="habito/index.html">
-        <div class="ic" style="background:none;padding:0"><img src="habito/icon.png" alt="Habito" style="width:54px;height:54px;border-radius:14px"></div>
-        <h3>Habito</h3>
-        <p>Build better habits with streaks, stats and daily reminders — all stored privately on your device.</p>
         <span class="go">Learn more →</span>
       </a>
       <a class="app" href="naarpadhu/index.html">
@@ -116,6 +108,10 @@
         <p>All 400 verses of the Naaladiyar across 40 chapters — swipe reader, card maker &amp; daily verse. Free &amp; ad-free.</p>
         <span class="go">Learn more →</span>
       </a>
+    </div>
+
+    <div class="cat-label">Productivity</div>
+    <div class="apps">
       <a class="app" href="tasko/index.html">
         <div class="ic" style="background:none;padding:0"><img src="tasko/icon.png" alt="Tasko" style="width:54px;height:54px;border-radius:14px"></div>
         <h3>Tasko</h3>
@@ -126,6 +122,22 @@
         <div class="ic" style="background:none;padding:0"><img src="dailyplanner/icon.png" alt="DailyPlanner" style="width:54px;height:54px;border-radius:14px"></div>
         <h3>DailyPlanner</h3>
         <p>A paper-inspired daily planner — tasks, a 5 AM–11 PM timeline and a dotted notes page, all stored privately on your device.</p>
+        <span class="go">Learn more →</span>
+      </a>
+      <a class="app" href="habito/index.html">
+        <div class="ic" style="background:none;padding:0"><img src="habito/icon.png" alt="Habito" style="width:54px;height:54px;border-radius:14px"></div>
+        <h3>Habito</h3>
+        <p>Build better habits with streaks, stats and daily reminders — all stored privately on your device.</p>
+        <span class="go">Learn more →</span>
+      </a>
+    </div>
+
+    <div class="cat-label">Finance</div>
+    <div class="apps">
+      <a class="app" href="financeapp/index.html">
+        <div class="ic" style="background:none;padding:0"><img src="financeapp/icon.png" alt="Budgeto" style="width:54px;height:54px;border-radius:14px"></div>
+        <h3>Budgeto</h3>
+        <p>Track expenses, budgets, investments &amp; net worth — synced privately through your own iCloud.</p>
         <span class="go">Learn more →</span>
       </a>
     </div>
